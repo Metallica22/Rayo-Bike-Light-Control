@@ -1,0 +1,22 @@
+# Android Build & IDE
+.gradle/
+build/
+**/build/
+.idea/
+*.iml
+local.properties
+Captures/
+.externalNativeBuild/
+.cxx/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build tools & caches (keep repo lightweight)
+tools/
+uber-apk-signer.jar
+*.idsig
+
+# APK Binaries (upload to GitHub Releases)
+*.apk
