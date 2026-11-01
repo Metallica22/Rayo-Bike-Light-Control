@@ -33,9 +33,16 @@ Unfortunately, the manufacturer ceased operations and permanently shut down thei
 - **🔒 Anti-Theft & Motion Alarm:** Arm the internal motion sensor; the app triggers an instant audio-visual alert dialog if someone tampers with your bike.
 - **🔋 Battery Level Readout:** Standard BLE Battery Service (0x180F) integration with live percentage display.
 - **📊 Real-time BLE Packet Logger:** Built-in hex diagnostic log showing transmitted (`TX`) and received (`RX`) packets.
-- **🌐 Bilingual UI:** Automatically adapts to device language:
-  - 🇩🇪 **German** (`de`)
+- **🌐 Native Multi-Language Support:** Automatically adapts to device language:
   - 🇬🇧 **English** (`en` - default)
+  - 🇩🇪 **German** (`de`)
+  - 🇫🇷 **French** (`fr`)
+  - 🇳🇱 **Dutch** (`nl`)
+  - 🇮🇹 **Italian** (`it`)
+  - 🇪🇸 **Spanish** (`es`)
+  - 🇵🇱 **Polish** (`pl`)
+  - 🇩🇰 **Danish** (`da`)
+  - 🇨🇿 **Czech** (`cs`)
 - **📱 Modern Android Support:** Targets **Android 14, 15, 16 & 17 (targetSdkVersion 37)** with modern runtime permissions (`BLUETOOTH_SCAN`, `BLUETOOTH_CONNECT` with `neverForLocation`) and edge-to-edge support. No legacy OS warnings!
 
 ---

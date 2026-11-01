@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ovládání Světla Rayo</string>
+    <string name="header_title">RAYO CONTROL</string>
+    <string name="status_disconnected">Nepřipojeno</string>
+    <string name="battery_format">Baterie: %d%%</string>
+    <string name="battery_placeholder">Baterie: --%</string>
+    <string name="btn_scan">Vyhledat &amp; Připojit Rayo</string>
+    <string name="btn_disconnect">Odpojit</string>
+    <string name="status_scanning">Hledání Rayo…</string>
+    <string name="status_connecting">Připojování k %s…</string>
+    <string name="status_connected">Připojeno k %1$s (%2$s)</string>
+    <string name="status_connected_simple">Připojeno k %s!</string>
+    <string name="status_bt_disabled">Bluetooth je vypnutý!</string>
+    <string name="status_no_scanner">BLE skener není k dispozici!</string>
+    <string name="status_scan_timeout">Vyhledávání dokončeno. Zapněte prosím Rayo.</string>
+    <string name="status_scan_failed">Vyhledávání selhalo (Chyba %d)</string>
+    <string name="status_permission_missing">Chybí oprávnění pro Bluetooth!</string>
+    <string name="status_read_services_failed">Nepodařilo se načíst služby.</string>
+    <string name="status_reading_services">Připojeno! Načítání služeb…</string>
+    <string name="status_saved_patterns">Režimy LED uloženy v Rayo!</string>
+    <string name="status_config_ack">Konfigurace potvrzena světlem Rayo!</string>
+    <string name="status_not_connected">Není připojeno k Rayo!</string>
+
+    <string name="sec_power_switch">OVLÁDÁNÍ NAPÁJENÍ</string>
+    <string name="btn_light_on">ZAPNOUT SVĚTLO</string>
+    <string name="btn_light_off">VYPNOUT SVĚTLO</string>
+    <string name="toast_light_on">Příkaz: ZAPNOUT SVĚTLO odeslán</string>
+    <string name="toast_light_off">Příkaz: VYPNOUT SVĚTLO odeslán</string>
+
+    <string name="sec_profiles">VÝBĚR PROFILU</string>
+    <string name="profile_1">Profil 1</string>
+    <string name="profile_2">Profil 2</string>
+    <string name="profile_3">Profil 3</string>
+    <string name="profile_4">Profil 4</string>
+    <string name="active_profile_format">Aktivní profil: Profil %d</string>
+    <string name="toast_profile_selected">Vybrán Profil %d</string>
+    <string name="toast_profile_loaded">Načtena data Profilu %d</string>
+
+    <string name="sec_led_patterns">REŽIMY LED &amp; JAS</string>
+    <string name="brightness_label_format">Jas: %d%%</string>
+    <string name="led_top_label">1. Horní LED (Zaostřená)</string>
+    <string name="led_mid_label">2. Střední LED (Širokoúhlá)</string>
+    <string name="led_bot_label">3. Dolní LED (Širokoúhlá)</string>
+    <string name="hardware_note">ℹ️ Poznámka: Samostatný jas pro každou LED je k dispozici pouze u novějšího hardwaru (CLIQ / FW 30+). U původního Rayo sdílejí všechny 3 LED společný posuvník jasu.</string>
+    <string name="brake_active">Detekce brzdového světla aktivní</string>
+    <string name="brake_sensitivity_label">Citlivost brzdění:</string>
+    <string name="btn_apply_leds">POUŽÍT REŽIMY &amp; JAS</string>
+    <string name="toast_apply_leds">Režimy LED a jas byly odeslány do Rayo!</string>
+
+    <string name="sec_smart_features">DALŠÍ NASTAVENÍ</string>
+    <string name="theft_alert">Alarm proti krádeži a pohybu</string>
+    <string name="btn_apply_alarm">Použít nastavení alarmu</string>
+    <string name="toast_alarm_applied">Nastavení alarmu odesláno do Rayo!</string>
+    <string name="theft_dialog_title">⚠️ VAROVÁNÍ PŘED KRÁDEŽÍ!</string>
+    <string name="theft_dialog_message">Vaše kolo bylo přesunuto! Rayo spustilo alarm!</string>
+    <string name="theft_dialog_stop">Vypnout alarm</string>
+
+    <string name="sec_ble_log">PROTOKOL BLE V REÁLNÉM ČASE</string>
+    <string name="btn_clear_log">Vymazat</string>
+    <string name="log_waiting">Čekání na připojení k Rayo...\n</string>
+
+    <string name="sec_developer_options">VÝVOJÁŘSKÉ MOŽNOSTI</string>
+    <string name="buy_me_a_coffee">Podpořte tento projekt (Buy Me a Coffee)</string>
+
+    <string name="perm_granted">Oprávnění Bluetooth uděleno!</string>
+    <string name="perm_denied">Povolte prosím Bluetooth v nastavení Androidu!</string>
+
+    <string-array name="patterns_array">
+        <item>0: Trvalé světlo (Constant)</item>
+        <item>1: Jemné pulzování (Glow)</item>
+        <item>2: Blikání (Blink)</item>
+        <item>3: Vlna (Surge)</item>
+        <item>4: Stroboskop / Záblesk (Burst)</item>
+        <item>5: Vypnuto (Off)</item>
+    </string-array>
+
+    <string-array name="sensitivity_array">
+        <item>Nízká</item>
+        <item>Střední</item>
+        <item>Vysoká</item>
+    </string-array>
+</resources>

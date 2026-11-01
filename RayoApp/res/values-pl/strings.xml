@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sterowanie Światłem Rayo</string>
+    <string name="header_title">RAYO CONTROL</string>
+    <string name="status_disconnected">Nie połączono</string>
+    <string name="battery_format">Bateria: %d%%</string>
+    <string name="battery_placeholder">Bateria: --%</string>
+    <string name="btn_scan">Szukaj &amp; Połącz Rayo</string>
+    <string name="btn_disconnect">Rozłącz</string>
+    <string name="status_scanning">Szukanie Rayo…</string>
+    <string name="status_connecting">Łączenie z %s…</string>
+    <string name="status_connected">Połączono z %1$s (%2$s)</string>
+    <string name="status_connected_simple">Połączono z %s!</string>
+    <string name="status_bt_disabled">Bluetooth jest wyłączony!</string>
+    <string name="status_no_scanner">Skaner BLE niedostępny!</string>
+    <string name="status_scan_timeout">Skanowanie zakończone. Włącz Rayo.</string>
+    <string name="status_scan_failed">Błąd skanowania (Kod %d)</string>
+    <string name="status_permission_missing">Brak uprawnień Bluetooth!</string>
+    <string name="status_read_services_failed">Nie udało się odczytać usług.</string>
+    <string name="status_reading_services">Połączono! Odczytywanie usług…</string>
+    <string name="status_saved_patterns">Wzory LED zapisane w Rayo!</string>
+    <string name="status_config_ack">Konfiguracja potwierdzona przez Rayo!</string>
+    <string name="status_not_connected">Brak połączenia z Rayo!</string>
+
+    <string name="sec_power_switch">STEROWANIE ZASILANIEM</string>
+    <string name="btn_light_on">WŁĄCZ ŚWIATŁO</string>
+    <string name="btn_light_off">WYŁĄCZ ŚWIATŁO</string>
+    <string name="toast_light_on">Polecenie: WŁĄCZ ŚWIATŁO wysłane</string>
+    <string name="toast_light_off">Polecenie: WYŁĄCZ ŚWIATŁO wysłane</string>
+
+    <string name="sec_profiles">WYBIERZ PROFIL</string>
+    <string name="profile_1">Profil 1</string>
+    <string name="profile_2">Profil 2</string>
+    <string name="profile_3">Profil 3</string>
+    <string name="profile_4">Profil 4</string>
+    <string name="active_profile_format">Aktywny profil: Profil %d</string>
+    <string name="toast_profile_selected">Wybrano Profil %d</string>
+    <string name="toast_profile_loaded">Załadowano dane Profilu %d</string>
+
+    <string name="sec_led_patterns">WZORY LED &amp; JASNOŚĆ</string>
+    <string name="brightness_label_format">Jasność: %d%%</string>
+    <string name="led_top_label">1. Górna dioda LED (Skupiona)</string>
+    <string name="led_mid_label">2. Środkowa dioda LED (Szerokokątna)</string>
+    <string name="led_bot_label">3. Dolna dioda LED (Szerokokątna)</string>
+    <string name="hardware_note">ℹ️ Uwaga: Indywidualna jasność dla każdej diody LED jest dostępna tylko w nowszym sprzęcie (CLIQ / FW 30+). W oryginalnym Rayo wszystkie 3 diody dzielą wspólny suwak jasności.</string>
+    <string name="brake_active">Wykrywanie hamowania aktywne</string>
+    <string name="brake_sensitivity_label">Czułość hamowania:</string>
+    <string name="btn_apply_leds">ZASTOSUJ WZORY &amp; JASNOŚĆ</string>
+    <string name="toast_apply_leds">Wzory LED i jasność wysłane do Rayo!</string>
+
+    <string name="sec_smart_features">DODATKOWE USTAWIENIA</string>
+    <string name="theft_alert">Alarm antykradzieżowy i ruchowy</string>
+    <string name="btn_apply_alarm">Zastosuj ustawienia alarmu</string>
+    <string name="toast_alarm_applied">Ustawienia alarmu wysłane do Rayo!</string>
+    <string name="theft_dialog_title">⚠️ ALARM KRADZIEŻY!</string>
+    <string name="theft_dialog_message">Twój rower został poruszony! Rayo uruchomiło alarm!</string>
+    <string name="theft_dialog_stop">Wyłącz alarm</string>
+
+    <string name="sec_ble_log">REJESTR BLE W CZASIE RZECZYWISTYM</string>
+    <string name="btn_clear_log">Wyczyść</string>
+    <string name="log_waiting">Oczekiwanie na połączenie z Rayo...\n</string>
+
+    <string name="sec_developer_options">OPCJE PROGRAMISTY</string>
+    <string name="buy_me_a_coffee">Wesprzyj ten projekt (Buy Me a Coffee)</string>
+
+    <string name="perm_granted">Przyznano uprawnienia Bluetooth!</string>
+    <string name="perm_denied">Zezwól na uprawnienia Bluetooth w ustawieniach Androida!</string>
+
+    <string-array name="patterns_array">
+        <item>0: Światło ciągłe (Constant)</item>
+        <item>1: Łagodne pulsowanie (Glow)</item>
+        <item>2: Miganie (Blink)</item>
+        <item>3: Fala (Surge)</item>
+        <item>4: Stroboskop / Błysk (Burst)</item>
+        <item>5: Wyłączona (Off)</item>
+    </string-array>
+
+    <string-array name="sensitivity_array">
+        <item>Niska</item>
+        <item>Średnia</item>
+        <item>Wysoka</item>
+    </string-array>
+</resources>

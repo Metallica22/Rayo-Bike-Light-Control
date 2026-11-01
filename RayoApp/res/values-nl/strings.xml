@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rayo Verlichtingsbediening</string>
+    <string name="header_title">RAYO CONTROL</string>
+    <string name="status_disconnected">Niet verbonden</string>
+    <string name="battery_format">Batterij: %d%%</string>
+    <string name="battery_placeholder">Batterij: --%</string>
+    <string name="btn_scan">Rayo zoeken &amp; Verbinden</string>
+    <string name="btn_disconnect">Verbinding verbreken</string>
+    <string name="status_scanning">Zoeken naar Rayo…</string>
+    <string name="status_connecting">Verbinden met %s…</string>
+    <string name="status_connected">Verbonden met %1$s (%2$s)</string>
+    <string name="status_connected_simple">Verbonden met %s!</string>
+    <string name="status_bt_disabled">Bluetooth is uitgeschakeld!</string>
+    <string name="status_no_scanner">BLE-scanner niet beschikbaar!</string>
+    <string name="status_scan_timeout">Scan voltooid. Schakel Rayo in.</string>
+    <string name="status_scan_failed">Scan mislukt (Fout %d)</string>
+    <string name="status_permission_missing">Bluetooth-toestemming ontbreekt!</string>
+    <string name="status_read_services_failed">Services konden niet worden gevonden.</string>
+    <string name="status_reading_services">Verbonden! Services uitlezen…</string>
+    <string name="status_saved_patterns">LED-patronen opgeslagen op Rayo!</string>
+    <string name="status_config_ack">Configuratie bevestigd door Rayo!</string>
+    <string name="status_not_connected">Niet verbonden met Rayo!</string>
+
+    <string name="sec_power_switch">STROOMBEDIENING</string>
+    <string name="btn_light_on">LICHT AAN</string>
+    <string name="btn_light_off">LICHT UIT</string>
+    <string name="toast_light_on">Opdracht: LICHT AAN verzonden</string>
+    <string name="toast_light_off">Opdracht: LICHT UIT verzonden</string>
+
+    <string name="sec_profiles">PROFIEL SELECTEREN</string>
+    <string name="profile_1">Profiel 1</string>
+    <string name="profile_2">Profiel 2</string>
+    <string name="profile_3">Profiel 3</string>
+    <string name="profile_4">Profiel 4</string>
+    <string name="active_profile_format">Actief profiel: Profiel %d</string>
+    <string name="toast_profile_selected">Profiel %d geselecteerd</string>
+    <string name="toast_profile_loaded">Profiel %d gegevens geladen</string>
+
+    <string name="sec_led_patterns">LED-PATRONEN &amp; HELDERHEID</string>
+    <string name="brightness_label_format">Helderheid: %d%%</string>
+    <string name="led_top_label">1. Bovenste LED (Focus)</string>
+    <string name="led_mid_label">2. Middelste LED (Groothoek)</string>
+    <string name="led_bot_label">3. Onderste LED (Groothoek)</string>
+    <string name="hardware_note">ℹ️ Opmerking: Individuele helderheid per LED is alleen beschikbaar op nieuwere hardware (CLIQ / FW 30+). Op de originele Rayo delen alle 3 de LED\'s dezelfde helderheidsschuifregelaar.</string>
+    <string name="brake_active">Remlichtdetectie actief</string>
+    <string name="brake_sensitivity_label">Remgevoeligheid:</string>
+    <string name="btn_apply_leds">PATRONEN &amp; HELDERHEID TOEPASSEN</string>
+    <string name="toast_apply_leds">LED-patronen en helderheid naar Rayo verzonden!</string>
+
+    <string name="sec_smart_features">EXTRA INSTELLINGEN</string>
+    <string name="theft_alert">Diefstal- &amp; bewegingsalarm</string>
+    <string name="btn_apply_alarm">Alarminstelling toepassen</string>
+    <string name="toast_alarm_applied">Alarminstelling naar Rayo verzonden!</string>
+    <string name="theft_dialog_title">⚠️ DIEFSTALWAARSCHUWING!</string>
+    <string name="theft_dialog_message">Je fiets is verplaatst! Rayo slaat alarm!</string>
+    <string name="theft_dialog_stop">Alarm stoppen</string>
+
+    <string name="sec_ble_log">REALTIME BLE-LOGBOEK</string>
+    <string name="btn_clear_log">Wissen</string>
+    <string name="log_waiting">Wachten op verbinding met Rayo...\n</string>
+
+    <string name="sec_developer_options">ONTWIKKELAARSOPTIES</string>
+    <string name="buy_me_a_coffee">Steun dit project (Buy Me a Coffee)</string>
+
+    <string name="perm_granted">Bluetooth-toestemming verleend!</string>
+    <string name="perm_denied">Geef Bluetooth-toestemming in de Android-instellingen!</string>
+
+    <string-array name="patterns_array">
+        <item>0: Continu licht</item>
+        <item>1: Zacht pulseren (Glow)</item>
+        <item>2: Knipperen (Blink)</item>
+        <item>3: Golf (Surge)</item>
+        <item>4: Stroboscoop / Flits (Burst)</item>
+        <item>5: Uitgeschakeld (Off)</item>
+    </string-array>
+
+    <string-array name="sensitivity_array">
+        <item>Laag</item>
+        <item>Gemiddeld</item>
+        <item>Hoog</item>
+    </string-array>
+</resources>
