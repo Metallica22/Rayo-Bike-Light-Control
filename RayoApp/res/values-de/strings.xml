@@ -60,6 +60,9 @@
     <string name="btn_clear_log">Leeren</string>
     <string name="log_waiting">Warte auf Rayo Verbindung...\n</string>
 
+    <string name="sec_developer_options">ENTWICKLER-OPTIONEN</string>
+    <string name="buy_me_a_coffee">Projekt unterstützen (Buy Me a Coffee)</string>
+
     <string name="perm_granted">Bluetooth-Berechtigung erteilt!</string>
     <string name="perm_denied">Bitte Bluetooth-Berechtigung in den Android-Einstellungen zulassen!</string>
 

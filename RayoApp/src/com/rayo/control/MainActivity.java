@@ -7,11 +7,13 @@ import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.Switch;
@@ -260,15 +262,42 @@ public class MainActivity extends Activity implements BleManager.BleListener {
             }
         });
 
-        // 6. BLE LOG
+        // 6. DEVELOPER OPTIONS (COLLAPSIBLE BLE LOG)
+        Switch swShowDevOptions = findViewById(R.id.swShowDevOptions);
+        final View layoutDevLogContainer = findViewById(R.id.layoutDevLogContainer);
+        if (swShowDevOptions != null && layoutDevLogContainer != null) {
+            swShowDevOptions.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    layoutDevLogContainer.setVisibility(isChecked ? View.VISIBLE : View.GONE);
+                }
+            });
+        }
+
         tvBleLog = findViewById(R.id.tvBleLog);
         btnClearLog = findViewById(R.id.btnClearLog);
-        btnClearLog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (tvBleLog != null) tvBleLog.setText("");
-            }
-        });
+        if (btnClearLog != null) {
+            btnClearLog.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (tvBleLog != null) tvBleLog.setText("");
+                }
+            });
+        }
+
+        // 7. BUY ME A COFFEE
+        View btnBuyMeACoffee = findViewById(R.id.btnBuyMeACoffee);
+        if (btnBuyMeACoffee != null) {
+            btnBuyMeACoffee.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://buymeacoffee.com/02eOWKzm5W"));
+                        startActivity(browserIntent);
+                    } catch (Exception ignored) {}
+                }
+            });
+        }
     }
 
     private void applyCurrentPatterns(boolean showToast) {

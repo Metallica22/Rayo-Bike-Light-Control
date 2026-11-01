@@ -107,18 +107,14 @@ def build():
 
     final_signed = os.path.join(ROOT, "base-aligned-debugSigned.apk")
     target_apk = os.path.join(ROOT, "Rayo_Control.apk")
-    target_apk_versioned = os.path.join(ROOT, "Rayo_Control_v1.1.1.apk")
     if os.path.exists(final_signed):
         if os.path.exists(target_apk):
             os.remove(target_apk)
-        if os.path.exists(target_apk_versioned):
-            os.remove(target_apk_versioned)
-        shutil.copy2(final_signed, target_apk)
-        os.rename(final_signed, target_apk_versioned)
+        os.rename(final_signed, target_apk)
         idsig = os.path.join(ROOT, "base-aligned-debugSigned.apk.idsig")
         if os.path.exists(idsig):
             os.remove(idsig)
-        print(f"SUCCESS! Built new APK: {target_apk_versioned} and {target_apk}")
+        print(f"SUCCESS! Built new APK: {target_apk}")
     else:
         raise RuntimeError("Signed APK not found!")
 

@@ -3,7 +3,7 @@
 [![Android Version](https://img.shields.io/badge/Android-6.0%20to%2017%20(API%2023--37)-brightgreen.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Cloud Free](https://img.shields.io/badge/Cloud-100%25%20Offline-success.svg)](#)
-[![BLE Protocol](https://img.shields.io/badge/Protocol-Nordic%20UART%20(NUS)-orange.svg)](#)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-orange.svg)](https://buymeacoffee.com/02eOWKzm5W)
 
 > **Standalone, 100% offline Android controller for the Hauteworks Rayo Smart Bicycle Tail Light.**  
 > *No cloud login, no server connection, no tracking – pure Bluetooth Low Energy (BLE) control.*
@@ -110,6 +110,14 @@ A zero-dependency build script is included:
 python build_new_apk.py
 ```
 *(Requires `aapt2`, `javac`, and `d8`)*
+
+---
+
+## ☕ Support & Community
+
+If this project helped you bring your Rayo tail light back to life, feel free to support:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/02eOWKzm5W)
 
 ---
 

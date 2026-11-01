@@ -462,12 +462,11 @@
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 
-        <!-- 6. LIVE BLE PROTOKOLL LOG -->
+        <!-- 6. DEVELOPER OPTIONS & BLE LOG (HIDDEN BY DEFAULT) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="32dp"
             android:background="@drawable/bg_card_rounded"
             android:orientation="vertical"
             android:padding="16dp">
@@ -482,34 +481,94 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/sec_ble_log"
+                    android:text="@string/sec_developer_options"
                     android:textColor="@color/text_secondary"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btnClearLog"
+                <Switch
+                    android:id="@+id/swShowDevOptions"
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
-                    android:backgroundTint="#333333"
-                    android:paddingHorizontal="10dp"
-                    android:text="@string/btn_clear_log"
-                    android:textColor="#AAAAAA"
-                    android:textSize="11sp" />
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/tvBleLog"
+            <LinearLayout
+                android:id="@+id/layoutDevLogContainer"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:layout_marginTop="8dp"
-                android:background="#0A0B0E"
-                android:fontFamily="monospace"
-                android:padding="8dp"
-                android:scrollbars="vertical"
-                android:text="@string/log_waiting"
-                android:textColor="#00E676"
-                android:textSize="11sp" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sec_ble_log"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnClearLog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:backgroundTint="#333333"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/btn_clear_log"
+                        android:textColor="#AAAAAA"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvBleLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#0A0B0E"
+                    android:fontFamily="monospace"
+                    android:padding="8dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/log_waiting"
+                    android:textColor="#00E676"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 7. FOOTER: BUY ME A COFFEE (DISCREET & TASTEFUL) -->
+        <LinearLayout
+            android:id="@+id/btnBuyMeACoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☕  "
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buy_me_a_coffee"
+                android:textColor="#888888"
+                android:textSize="12sp" />
         </LinearLayout>
 
     </LinearLayout>
