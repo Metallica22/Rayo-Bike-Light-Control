@@ -1,6 +1,6 @@
 # Rayo Light Control 🚲💡
 
-[![Android Version](https://img.shields.io/badge/Android-6.0%20to%2015%20(API%2023--34)-brightgreen.svg)](#)
+[![Android Version](https://img.shields.io/badge/Android-6.0%20to%2017%20(API%2023--37)-brightgreen.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Cloud Free](https://img.shields.io/badge/Cloud-100%25%20Offline-success.svg)](#)
 [![BLE Protocol](https://img.shields.io/badge/Protocol-Nordic%20UART%20(NUS)-orange.svg)](#)
@@ -36,7 +36,7 @@ Unfortunately, the manufacturer ceased operations and permanently shut down thei
 - **🌐 Bilingual UI:** Automatically adapts to device language:
   - 🇩🇪 **German** (`de`)
   - 🇬🇧 **English** (`en` - default)
-- **📱 Modern Android Support:** Targets **Android 14 & 15 (targetSdkVersion 34)** with modern runtime permissions (`BLUETOOTH_SCAN`, `BLUETOOTH_CONNECT` with `neverForLocation`). No legacy OS warnings!
+- **📱 Modern Android Support:** Targets **Android 14, 15, 16 & 17 (targetSdkVersion 37)** with modern runtime permissions (`BLUETOOTH_SCAN`, `BLUETOOTH_CONNECT` with `neverForLocation`) and edge-to-edge support. No legacy OS warnings!
 
 ---
 
